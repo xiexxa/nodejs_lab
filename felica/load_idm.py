@@ -26,12 +26,14 @@ if __name__ == '__main__':
 
         # IDmは16進表記
         print("%016X" % idm.value) #←16桁表示させるために変更
+        """
         if idm.value == int('IDm', 16):
             print('Suica')
         elif idm.value == int('IDm', 16):
             print('三井住友iD')
         else:
             print('else')
+        """
 
     # READMEより、felica_polling()使用後はfree()を使う
     # なお、freeは自動的にライブラリに入っているもよう
