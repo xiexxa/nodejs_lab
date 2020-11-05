@@ -1,0 +1,35 @@
+<template>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <v-app>
+      <v-content>
+        <v-btn light>Button</v-btn>
+        <v-btn dark rounded>rounded</v-btn>
+        <v-slider dense hint="Im a hint" min="1" max="100"></v-slider>
+      </v-content>
+      <v-container>
+        <v-btn dark>Button</v-btn>
+        <v-btn dark rounded>rounded</v-btn>
+        <v-slider dense hint="Im a hint" min="1" max="100"></v-slider>
+      </v-container>
+    </v-app>
+    <router-view/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

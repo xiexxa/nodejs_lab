@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bulma-extensions": "^6.2.7",
     "cheerio-httpcli": "^0.8.1",
     "mysql": "^2.18.1"
   }
