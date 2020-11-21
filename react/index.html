@@ -1,0 +1,49 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>React Test</title>
+  </head>
+  <style>
+    .main {
+      border: 1px solid black;
+      display: inline-block;
+    }
+    .pad {
+      padding: 1rem;
+    }
+  </style>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+    <script type="text/babel">
+    ReactDOM.render(
+      <App name="jj" />,
+      document.getElementById('root')
+    );
+    function App(props) {
+      let variable = 'バリアブル';
+      return (
+        <div>
+          <div className="main pad">
+            <h1 style={{color: 'red', fontSize: '32pt', border: 'solid'}}>Good</h1>
+            <ul>
+              <li>{props.name}</li>
+              <li>{variable}</li>
+            </ul>
+            <input type="text" value={variable + "hello"} />
+            <button onClick={ (e) => {
+              alert('Click')
+            } }>BUTTON</button>
+          </div>
+          <div className="main pad">
+            <h3>Main Pad 2</h3>
+            
+          </div>
+        </div>
+      );
+    }
+    </script>
+  </body>
+</html>
