@@ -18,3 +18,7 @@
 # Apacheを動かすには
 --privilegedと/sbin/initを指定しないとエラーが出る。  
 `$ docker run --name jikken_php -d -it -p 80:80 --privileged centos:8 /sbin/init`
+
+# docker-composeで作ったコンテナにexec -itでシェルログインしたいが、エラーが出るとき
+OCI runtime exec failedとエラーが出るときは、以下のようにbashではなくshでログインして対処する。
+`$ docker exec -it [コンテナ名] /bin/sh`
