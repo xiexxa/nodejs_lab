@@ -72,3 +72,5 @@ node -vを実行した結果が表示される。
     `$ docker-compose stop`
     - docker-composeで作ったコンテナを削除する  
     `$ docker-compose rm`
+    - docker-composeのコンテナの状態を確認する
+    `$ docker-compose ps`
